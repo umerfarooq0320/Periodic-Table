@@ -1,0 +1,70 @@
+body {
+  background: #f4f4f4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 40px auto;
+}
+
+td {
+  width: 70px; 
+  height: 70px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+td:not(.empty) {
+  border: 1px solid #444;
+}
+
+.empty {
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #777;
+}
+
+.num {
+  position: absolute;
+  top: 4px;
+  left: 6px;
+  font-size: 11px;
+}
+
+.sym {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.name {
+  font-size: 9px;
+  position: absolute;
+  bottom: 4px;
+  width: 100%;
+  left: 0;
+}
+
+.alkali { background: #ff9999; }
+.alkaline { background: #ffdead; }
+.transition { background: #add8e6; }
+.post-transition { background: #cccccc; }
+.metalloid { background: #90ee90; }
+.nonmetal { background: #ffff99; }
+.halogen { background: #ffa500; }
+.noble { background: #da70d6; }
+.lanthanide { background: #ffb3ff; }
+.actinide { background: #e6b3ff; }
+
+/* Subtle Hover Effect */
+/* td:not(.empty):hover {
+  transform: scale(1.1);
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.1s ease;
+  cursor: pointer;
+} */
